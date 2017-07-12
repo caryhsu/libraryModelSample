@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({"my.library.configuration","my.library.dao","my.library.service" })
+@ComponentScan({"my.library.dao","my.library.service" })
 @PropertySource(value = {"classpath:application.properties"})
 public class JpaConfig {
 

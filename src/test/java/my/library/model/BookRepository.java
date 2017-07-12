@@ -11,6 +11,16 @@ public class BookRepository {
 		return this.books;
 	}
 	
+	public List<Book> findByISBN(String isbn) {
+		List<Book> books = new ArrayList<Book>();
+		for(Book book : this.books) {
+			if (book.getISBN().equals(isbn)) {
+				books.add(book);
+			}
+		}
+		return books;
+	}
+	
 	public BookRepository() {
 		Book book1 = new Book("億萬商機鳳梨酥！天然手作無添加，居家創業也OK：從炒餡開始，烘烤最安心的彩色金磚【收錄人氣月餅實作】");
 		book1.setAuthors("杜佳穎");

@@ -1,38 +1,44 @@
 package my.library.hibernate;
 
 import org.hibernate.Session;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import my.library.model.Book;
 public class SampleDataBuilder {
 
 	public static void main(String[] args) {
-		System.out.println("Maven + Hibernate + H2 testing");
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("/applicationContext.xml");
+		
+		MyClass myObj= MyClass.class.cast(ctx.getBean("myBeanName")); 
+		
+		
 		Session session = HibernateUtil.getSessionFactory().openSession();
-
+				
 		session.beginTransaction();
 		
-		Book book1 = new Book("»õ¸U°Ó¾÷»ñ±ù¶p¡I¤ÑµM¤â§@µL²K¥[¡A©~®a³Ğ·~¤]OK¡G±qª£À`¶}©l¡A¯M¯N³Ì¦w¤ßªº±m¦âª÷¿j¡i¦¬¿ı¤H®ğ¤ë»æ¹ê§@¡j");
-		book1.setAuthors("§ù¨Î¿o");
+		Book book1 = new Book("å­©å­çš„ç§‘å­¸éŠæˆ²ï¼š53å€‹åœ¨å®¶å°±èƒ½ç©çš„ç§‘å­¸å¯¦é©—å…¨åœ–è§£");
+		book1.setAuthors("è•­ä¿Šå‚‘");
 		book1.setISBN("9789864082940");
 		session.save(book1);
 		
-		Book book2 = new Book("¦W©±¤£±Ñ¬ü¨ıÅ]ªk¤ôªG¶ğ¡G¶ğ¥Ö¡ÑÀ`®Æ¡ÑÂAªG¡Ñ½L¹¢Âæ§¹¬ü·f°t¡A¦h¼h¦¸¤S¤£²¢¿°ªº¦n´ş¨ı");
-		book2.setAuthors("§d¨Ø»T");
+		Book book2 = new Book("è˜‹æœåª½åª½æœ€å—æ­¡è¿çš„è¶…èŒå¡—é´‰æ›¸ï¼šè®“å¤§å°æœ‹å‹èˆ‡è¦ªå­éƒ½æ„›çš„å¿«æ¨‚ç•«ç•«è¶£");
+		book2.setAuthors("è˜‡ç¬æ¸…");
 		book2.setISBN("9789863710608");
 		session.save(book2);
 		
-		Book book3 = new Book("©@°Ø¸t¸g");
-		book3.setAuthors("Anette Moldvaer");
+		Book book3 = new Book("é¦–çˆ¾è¶…å°è¦½ 2017");
+		book3.setAuthors("è•­è¾°å€¢");
 		book3.setISBN("9789863770916");
 		session.save(book3);
 		
-		Book book4 = new Book("©@°Ø¸t¸g");
-		book4.setAuthors("Anette Moldvaer");
+		Book book4 = new Book("é¦–çˆ¾åœ°éµåœ°åœ–å¿«æ˜“é€š2017-2018");
+		book4.setAuthors("è•­è¾°å€¢");
 		book4.setISBN("9789863770916");
 		session.save(book4);
 		
-		Book book5 = new Book("¤â¨R©@°Ø¤j¥ş");
-		book5.setAuthors("Áà¤pÀn©@°Ø®v°V½m¤¤¤ß");
+		Book book5 = new Book("ç¥å¥‡å°æ‰‹æŒ‡å‹•ä¸€å‹•ï¼šæˆ‘çš„æœ‹å‹å‘¢ï¼Ÿ");
+		book5.setAuthors("å¤æ´›ç‰¹â€§å˜‰æ–¯æœµ");
 		book5.setISBN("9789863316589");
 		session.save(book5);
 			

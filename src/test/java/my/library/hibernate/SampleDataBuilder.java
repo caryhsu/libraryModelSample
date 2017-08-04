@@ -7,6 +7,7 @@ public class SampleDataBuilder {
 
 	public static void main(String[] args) {
 		System.out.println("Maven + Hibernate + H2 testing");
+		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 
 		session.beginTransaction();

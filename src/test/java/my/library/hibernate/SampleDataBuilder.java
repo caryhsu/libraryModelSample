@@ -8,11 +8,6 @@ import my.library.model.Book;
 public class SampleDataBuilder {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("/applicationContext.xml");
-		
-		MyClass myObj= MyClass.class.cast(ctx.getBean("myBeanName")); 
-		
-		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 				
 		session.beginTransaction();

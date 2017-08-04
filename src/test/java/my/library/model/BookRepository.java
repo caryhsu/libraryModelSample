@@ -22,28 +22,28 @@ public class BookRepository {
 	}
 	
 	public BookRepository() {
-		Book book1 = new Book("»õ¸U°Ó¾÷»ñ±ù¶p¡I¤ÑµM¤â§@µL²K¥[¡A©~®a³Ð·~¤]OK¡G±qª£À`¶}©l¡A¯M¯N³Ì¦w¤ßªº±m¦âª÷¿j¡i¦¬¿ý¤H®ð¤ë»æ¹ê§@¡j");
-		book1.setAuthors("§ù¨Î¿o");
+		Book book1 = new Book("å­©å­çš„ç§‘å­¸éŠæˆ²ï¼š53å€‹åœ¨å®¶å°±èƒ½çŽ©çš„ç§‘å­¸å¯¦é©—å…¨åœ–è§£");
+		book1.setAuthors("è•­ä¿Šå‚‘");
 		book1.setISBN("9789864082940");
 		books.add(book1);
 		
-		Book book2 = new Book("¦W©±¤£±Ñ¬ü¨ýÅ]ªk¤ôªG¶ð¡G¶ð¥Ö¡ÑÀ`®Æ¡ÑÂAªG¡Ñ½L¹¢Âæ§¹¬ü·f°t¡A¦h¼h¦¸¤S¤£²¢¿°ªº¦n´þ¨ý");
-		book2.setAuthors("§d¨Ø»T");
+		Book book2 = new Book("è˜‹æžœåª½åª½æœ€å—æ­¡è¿Žçš„è¶…èŒå¡—é´‰æ›¸ï¼šè®“å¤§å°æœ‹å‹èˆ‡è¦ªå­éƒ½æ„›çš„å¿«æ¨‚ç•«ç•«è¶£");
+		book2.setAuthors("è˜‡ç¬æ¸…");
 		book2.setISBN("9789863710608");
 		books.add(book2);
 		
-		Book book3 = new Book("©@°Ø¸t¸g");
-		book3.setAuthors("Anette Moldvaer");
+		Book book3 = new Book("é¦–çˆ¾è¶…å°Žè¦½ 2017");
+		book3.setAuthors("è•­è¾°å€¢");
 		book3.setISBN("9789863770916");
 		books.add(book3);
 		
-		Book book4 = new Book("©@°Ø¸t¸g");
-		book4.setAuthors("Anette Moldvaer");
+		Book book4 = new Book("é¦–çˆ¾åœ°éµåœ°åœ–å¿«æ˜“é€š2017-2018");
+		book4.setAuthors("è•­è¾°å€¢");
 		book4.setISBN("9789863770916");
 		books.add(book4);
 		
-		Book book5 = new Book("¤â¨R©@°Ø¤j¥þ");
-		book5.setAuthors("Áà¤pÀn©@°Ø®v°V½m¤¤¤ß");
+		Book book5 = new Book("ç¥žå¥‡å°æ‰‹æŒ‡å‹•ä¸€å‹•ï¼šæˆ‘çš„æœ‹å‹å‘¢ï¼Ÿ");
+		book5.setAuthors("å¤æ´›ç‰¹â€§å˜‰æ–¯æœµ");
 		book5.setISBN("9789863316589");
 		books.add(book5);
 	}
